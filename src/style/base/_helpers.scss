@@ -1,0 +1,7 @@
+@mixin border($color, $pos: null) {
+	@if $pos == null {
+		border: 2px solid $color;
+	} @else {
+		border-#{$pos}: 2px solid $color;
+	}
+}
