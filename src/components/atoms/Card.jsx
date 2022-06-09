@@ -1,5 +1,5 @@
 import { createBem as bem, classnames } from '../../utils';
-import { ICart } from '../Icon';
+import { ICart } from './Icon';
 
 export default function Card({ className }) {
 	const card = bem('card');
