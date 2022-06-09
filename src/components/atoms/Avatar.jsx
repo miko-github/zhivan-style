@@ -1,20 +1,21 @@
-import React from 'react';
-import classnames from 'classnames';
-import { createBem } from '../../utils';
-import avatarImage from './../../assets/images/avatar.png';
+import { classnames, createBem } from '../../utils';
 
-function Avatar({ className, displayName = 'علی اسدپور' }) {
+export default function Avatar({ className, username, image, displayName }) {
 	const avatar = createBem('avatar');
 	return (
 		<figure className={classnames(avatar(), className)}>
+			<a href='#/users/@/{username}' className={avatar('link')}>
+				click here to see the {displayName}
+			</a>
 			<img
 				className={avatar('image')}
-				src={avatarImage}
+				src={
+					image ||
+					`https://avatars.githubusercontent.com/${username}?s=460&v=4`
+				}
 				alt={`zhivan style | ${displayName}`}
 			/>
-			<figcaption className={avatar('name')}>{displayName}</figcaption>
+			<figcaption className={avatar('caption')}>{displayName}</figcaption>
 		</figure>
 	);
 }
-
-export default Avatar;
