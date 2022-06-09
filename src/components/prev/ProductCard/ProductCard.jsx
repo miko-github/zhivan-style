@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBem } from './../../utils';
+import { createBem } from '../../../utils';
 import classnames from 'classnames';
 
 import Image from '../Image';

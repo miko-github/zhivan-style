@@ -1,9 +1,9 @@
 import React from 'react';
-import { createBem } from './../../utils';
+import { createBem } from '../../../utils';
 import classnames from 'classnames';
 
 import { More } from './../Button';
-import Headline from './../Headline';
+import Headline from '../Headline';
 import Product from '../ProductCard';
 
 import image1 from './../../assets/images/image-style(1).png';

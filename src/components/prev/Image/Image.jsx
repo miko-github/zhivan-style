@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { createBem } from './../../utils';
+import { createBem } from '../../../utils';
 import image from './../../assets/images/image-style(3).png';
 
 function Image({ src, alt, round, className }) {

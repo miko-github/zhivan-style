@@ -1,8 +1,8 @@
 import React from 'react';
-import { createBem } from './../../utils';
+import { createBem } from '../../../utils';
 
 import Avatar from './../Avatar';
-import Navigation from './../Navigation';
+import Navigation from '../Navigation';
 import SearchBox from './../SearchBox';
 import { Cart } from './../Button';
 

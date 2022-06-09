@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { createBem } from '../../utils';
+import { createBem } from '../../../utils';
 
 const createNav = (text, path, isActive = false) => ({
 	text,
